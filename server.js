@@ -6,7 +6,7 @@ const app = express();
 app.use(express.json());
 
 // Configuration
-const GEMINI_API_KEY = "AIzaSyBsQnaUc2IwbtUIQa9maEQ5jGU0BZD1oXc";
+const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
 const GEMINI_API_URL = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent';
 
 // Function to call Gemini API
